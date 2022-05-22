@@ -18,11 +18,10 @@ class Ui(QtWidgets.QMainWindow):
         #Loads the UI file from filename
         uic.loadUi(os.path.join(sys.path[0], "ProgramUI.ui"), self)
         self.show()
-        
+
         #Connect elements to functions
         self.ExamplePushbutton.clicked.connect(self.ExampleClicked)
 
-    #Functions behind UI elements
     def ExampleClicked(self):
         print('Example button was clicked')
 
