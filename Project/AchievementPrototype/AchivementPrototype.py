@@ -23,8 +23,17 @@ class Ui(QtWidgets.QMainWindow):
         self.ExamplePushbutton.clicked.connect(self.ExampleClicked)
 
     #Functions behind UI elements
+    global messagebox
+    def messagebox():
+        msg = QMessageBox()
+        msg.setText('poopy')
+        msg.setWindowTitle('Yes')
+        msg.setIcon(QMessageBox.Critical)
+        msg.exec_()
+
     def ExampleClicked(self):
         print('Example button was clicked')
+        messagebox()
 
 
 
