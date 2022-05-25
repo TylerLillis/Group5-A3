@@ -1,4 +1,3 @@
-#Imports required modules
 from PyQt5 import QtWidgets, uic, QtCore
 from PyQt5.QtWidgets import *
 import sys
@@ -20,11 +19,17 @@ class Ui(QtWidgets.QMainWindow):
         self.show()
 
         #Connect elements to functions
-        self.ExamplePushbutton.clicked.connect(self.ExampleClicked)
+        self.Option1.clicked.connect(self.Option1Clicked)
+        self.Option2.clicked.connect(self.Option2Clicked)
+                                     
+    def Option1Clicked(self):
+        print('Option 1 was clicked')
+        self.answer.setText("Option 1 was clicked")
 
-    def ExampleClicked(self):
-        print('Example button was clicked')
 
+    def Option2Clicked(self):
+        print('Option 2 was clicked')
+        self.answer.setText("Option 2 was clicked")
 
 
 
