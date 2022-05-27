@@ -6,25 +6,40 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1021</width>
+    <height>637</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1021</width>
+    <height>637</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1021</width>
+    <height>637</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QFrame" name="AcheivementPage">
+   <widget class="QFrame" name="frmAchievement1">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>0</y>
-      <width>781</width>
-      <height>541</height>
+      <x>110</x>
+      <y>110</y>
+      <width>201</width>
+      <height>191</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
+     <string notr="true">border-color: rgb(0, 0, 0);
+border-radius: 15px;
+border-width: 4px;
+border-style: solid;</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -32,248 +47,378 @@
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QFrame" name="ExampleFrame">
+    <widget class="QLabel" name="label_2">
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>60</y>
-       <width>201</width>
-       <height>151</height>
+       <y>20</y>
+       <width>141</width>
+       <height>31</height>
       </rect>
      </property>
-     <property name="autoFillBackground">
-      <bool>false</bool>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+      </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(0, 255, 0);</string>
+      <string notr="true">border-width: 0px</string>
+     </property>
+     <property name="text">
+      <string>Placeholder</string>
      </property>
     </widget>
-    <widget class="RedFrames" name="frame">
-     <property name="geometry">
-      <rect>
-       <x>280</x>
-       <y>60</y>
-       <width>201</width>
-       <height>151</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 5, 17);</string>
-     </property>
-    </widget>
-    <widget class="RedFrames" name="frame_2">
-     <property name="geometry">
-      <rect>
-       <x>540</x>
-       <y>60</y>
-       <width>201</width>
-       <height>151</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 5, 17);</string>
-     </property>
-    </widget>
-    <widget class="RedFrames" name="frame_6">
-     <property name="geometry">
-      <rect>
-       <x>540</x>
-       <y>300</y>
-       <width>201</width>
-       <height>151</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 5, 17);</string>
-     </property>
-    </widget>
-    <widget class="RedFrames" name="frame_4">
-     <property name="geometry">
-      <rect>
-       <x>280</x>
-       <y>300</y>
-       <width>201</width>
-       <height>151</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 5, 17);</string>
-     </property>
-    </widget>
-    <widget class="RedFrames" name="frame_3">
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>30</y>
+      <width>261</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>30</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Achievements</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnBack">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>570</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(197, 205, 224);
+border-radius: 10px</string>
+    </property>
+    <property name="text">
+     <string>Back</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frmAchievement4">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>350</y>
+      <width>201</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-color: rgb(0, 0, 0);
+border-radius: 15px;
+border-width: 4px;
+border-style: solid;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_3">
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>300</y>
-       <width>201</width>
-       <height>151</height>
+       <y>20</y>
+       <width>141</width>
+       <height>31</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 5, 17);</string>
+      <string notr="true">border-width: 0px</string>
+     </property>
+     <property name="text">
+      <string>Placeholder</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="ExamplePushbutton">
+   </widget>
+   <widget class="QFrame" name="frmAchievement2">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>110</y>
+      <width>201</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-color: rgb(0, 0, 0);
+border-radius: 15px;
+border-width: 4px;
+border-style: solid;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_4">
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>210</y>
-       <width>201</width>
-       <height>28</height>
+       <y>20</y>
+       <width>141</width>
+       <height>31</height>
       </rect>
      </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(0, 255, 0);</string>
-     </property>
-     <property name="text">
-      <string>Example Push Button</string>
-     </property>
-    </widget>
-    <widget class="PushButtons" name="ExamplePushbutton_2">
-     <property name="geometry">
-      <rect>
-       <x>280</x>
-       <y>210</y>
-       <width>201</width>
-       <height>28</height>
-      </rect>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+      </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 5, 17);</string>
+      <string notr="true">border-width: 0px</string>
      </property>
      <property name="text">
-      <string>Example Push Button</string>
+      <string>Placeholder</string>
      </property>
     </widget>
-    <widget class="PushButtons" name="ExamplePushbutton_3">
-     <property name="geometry">
-      <rect>
-       <x>540</x>
-       <y>210</y>
-       <width>201</width>
-       <height>28</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 5, 17);</string>
-     </property>
-     <property name="text">
-      <string>Example Push Button</string>
-     </property>
-    </widget>
-    <widget class="PushButtons" name="ExamplePushbutton_4">
+   </widget>
+   <widget class="QFrame" name="frmAchievement3">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>110</y>
+      <width>201</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-color: rgb(0, 0, 0);
+border-radius: 15px;
+border-width: 4px;
+border-style: solid;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_7">
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>450</y>
-       <width>201</width>
-       <height>28</height>
+       <y>20</y>
+       <width>141</width>
+       <height>31</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 5, 17);</string>
+      <string notr="true">border-width: 0px</string>
      </property>
      <property name="text">
-      <string>Example Push Button</string>
+      <string>Placeholder</string>
      </property>
     </widget>
-    <widget class="PushButtons" name="ExamplePushbutton_5">
+   </widget>
+   <widget class="QFrame" name="frmAchievement6">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>350</y>
+      <width>201</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-color: rgb(0, 0, 0);
+border-radius: 15px;
+border-width: 4px;
+border-style: solid;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_8">
      <property name="geometry">
       <rect>
-       <x>280</x>
-       <y>450</y>
-       <width>201</width>
-       <height>28</height>
+       <x>30</x>
+       <y>20</y>
+       <width>141</width>
+       <height>31</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 5, 17);</string>
+      <string notr="true">border-width: 0px</string>
      </property>
      <property name="text">
-      <string>Example Push Button</string>
+      <string>Placeholder</string>
      </property>
     </widget>
-    <widget class="PushButtons" name="ExamplePushbutton_6">
+   </widget>
+   <widget class="QFrame" name="frmAchievement5">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>350</y>
+      <width>201</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-color: rgb(0, 0, 0);
+border-radius: 15px;
+border-width: 4px;
+border-style: solid;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_6">
      <property name="geometry">
       <rect>
-       <x>540</x>
-       <y>450</y>
-       <width>201</width>
-       <height>28</height>
+       <x>30</x>
+       <y>20</y>
+       <width>141</width>
+       <height>31</height>
       </rect>
      </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 5, 17);</string>
-     </property>
-     <property name="text">
-      <string>Example Push Button</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="BackButton">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>510</y>
-       <width>93</width>
-       <height>28</height>
-      </rect>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+      </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(191, 191, 191);</string>
+      <string notr="true">border-width: 0px</string>
      </property>
      <property name="text">
-      <string>Back</string>
+      <string>Placeholder</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label">
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>550</y>
+      <width>261</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Example Inputs (for testing)</string>
+    </property>
+    <widget class="QPushButton" name="btnAchievement1">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>0</y>
-       <width>291</width>
-       <height>41</height>
+       <y>20</y>
+       <width>75</width>
+       <height>23</height>
       </rect>
      </property>
-     <property name="autoFillBackground">
-      <bool>false</bool>
+     <property name="text">
+      <string>Give A1</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnAchievement2">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>20</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
      </property>
      <property name="text">
-      <string>Achievements</string>
+      <string>Give A2</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnAchievement3">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>20</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Give A3</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnAchievement4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Give A4</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnAchievement5">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>50</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Give A5</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnAchievement6">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>50</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Give A6</string>
      </property>
     </widget>
    </widget>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>800</width>
-     <height>26</height>
-    </rect>
-   </property>
-   <widget class="QMenu" name="menuAchivement_Window">
-    <property name="title">
-     <string>Achivement Window</string>
-    </property>
-   </widget>
-   <addaction name="menuAchivement_Window"/>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <customwidgets>
-  <customwidget>
-   <class>PushButtons</class>
-   <extends>QPushButton</extends>
-   <header>pushbuttons.h</header>
-  </customwidget>
-  <customwidget>
-   <class>RedFrames</class>
-   <extends>QFrame</extends>
-   <header>redframes.h</header>
-   <container>1</container>
-  </customwidget>
- </customwidgets>
  <resources/>
  <connections/>
 </ui>

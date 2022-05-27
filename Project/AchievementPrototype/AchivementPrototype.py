@@ -20,7 +20,12 @@ class Ui(QtWidgets.QMainWindow):
         self.show()
         
         #Connect elements to functions
-        self.ExamplePushbutton.clicked.connect(self.ExampleClicked)
+        self.btnAchievement1.clicked.connect(self.Achievement1Clicked)
+        self.btnAchievement2.clicked.connect(self.Achievement2Clicked)
+        self.btnAchievement3.clicked.connect(self.Achievement3Clicked)
+        self.btnAchievement4.clicked.connect(self.Achievement4Clicked)
+        self.btnAchievement5.clicked.connect(self.Achievement5Clicked)
+        self.btnAchievement6.clicked.connect(self.Achievement6Clicked)
 
     #Functions behind UI elements
     global messagebox
@@ -31,15 +36,24 @@ class Ui(QtWidgets.QMainWindow):
         msg.setIcon(QMessageBox.Critical)
         msg.exec_()
 
-    def ExampleClicked(self):
-        print('Example button was clicked')
-        self.ExampleFrame.setStyleSheet("background-color : yellow")
-        self.ExamplePushbutton.setStyleSheet("background-color : yellow")
+    def Achievement1Clicked(self):
+        self.frmAchievement1.setStyleSheet("border-radius: 15px; border-width: 4px; border-style: solid; border-color: rgb(103, 183, 72); background-color: rgb(103, 183, 72);")
         messagebox()
-        self.ExampleFrame.setStyleSheet("background-color : rgb(0, 255, 0);")
-        self.ExamplePushbutton.setStyleSheet("background-color : rgb(0, 255, 0);")
-        
-        
+    def Achievement2Clicked(self):
+        self.frmAchievement2.setStyleSheet("border-radius: 15px; border-width: 4px; border-style: solid; border-color: rgb(103, 183, 72); background-color: rgb(103, 183, 72);")
+        messagebox()
+    def Achievement3Clicked(self):
+        self.frmAchievement3.setStyleSheet("border-radius: 15px; border-width: 4px; border-style: solid; border-color: rgb(103, 183, 72); background-color: rgb(103, 183, 72);")
+        messagebox()
+    def Achievement4Clicked(self):
+        self.frmAchievement4.setStyleSheet("border-radius: 15px; border-width: 4px; border-style: solid; border-color: rgb(103, 183, 72); background-color: rgb(103, 183, 72);")
+        messagebox()
+    def Achievement5Clicked(self):
+        self.frmAchievement5.setStyleSheet("border-radius: 15px; border-width: 4px; border-style: solid; border-color: rgb(103, 183, 72); background-color: rgb(103, 183, 72);")
+        messagebox()
+    def Achievement6Clicked(self):
+        self.frmAchievement6.setStyleSheet("border-radius: 15px; border-width: 4px; border-style: solid; border-color: rgb(103, 183, 72); background-color: rgb(103, 183, 72);")
+        messagebox()
 #Creates an instance of the app and window and then executes the program.
 app = QtWidgets.QApplication(sys.argv)
 window = Ui()
