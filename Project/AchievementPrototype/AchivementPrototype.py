@@ -26,19 +26,16 @@ class Ui(QtWidgets.QMainWindow):
     global messagebox
     def messagebox():
         msg = QMessageBox()
-        msg.setText('poopy')
-        msg.setWindowTitle('Yes')
+        msg.setText('Unlocked **Achievement name**')
+        msg.setWindowTitle('Achievement')
         msg.setIcon(QMessageBox.Critical)
         msg.exec_()
 
     def ExampleClicked(self):
         print('Example button was clicked')
+        self.ExamplePushbutton.setStyleSheet("background-color : yellow")
         messagebox()
-
-
-
-
-
+        
 #Creates an instance of the app and window and then executes the program.
 app = QtWidgets.QApplication(sys.argv)
 window = Ui()
