@@ -15,7 +15,7 @@ class Ui(QtWidgets.QMainWindow):
     def __init__(self):
         super(Ui, self).__init__()
         #Loads the UI file from filename
-        uic.loadUi(os.path.join(sys.path[0], "ProgramUI.ui"), self)
+        uic.loadUi(os.path.join(sys.path[0], "ProgramTestingUI.ui"), self)
         self.show()
 
         #Connect elements to functions
