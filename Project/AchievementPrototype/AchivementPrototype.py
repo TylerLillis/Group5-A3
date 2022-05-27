@@ -33,8 +33,12 @@ class Ui(QtWidgets.QMainWindow):
 
     def ExampleClicked(self):
         print('Example button was clicked')
+        self.ExampleFrame.setStyleSheet("background-color : yellow")
         self.ExamplePushbutton.setStyleSheet("background-color : yellow")
         messagebox()
+        self.ExampleFrame.setStyleSheet("background-color : rgb(0, 255, 0);")
+        self.ExamplePushbutton.setStyleSheet("background-color : rgb(0, 255, 0);")
+        
         
 #Creates an instance of the app and window and then executes the program.
 app = QtWidgets.QApplication(sys.argv)
