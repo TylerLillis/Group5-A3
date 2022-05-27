@@ -16,17 +16,23 @@ class Ui(QtWidgets.QMainWindow):
     def __init__(self):
         super(Ui, self).__init__()
         #Loads the UI file from filename
-        uic.loadUi(os.path.join(sys.path[0], "ProgramUI.ui"), self)
+        uic.loadUi(os.path.join(sys.path[0], "ProgramTeachingUI.ui"), self)
         self.show()
         
         #Connect elements to functions
-        self.ExamplePushbutton.clicked.connect(self.ExampleClicked)
+        self.btnHome.clicked.connect(self.HomeClicked)
+        self.btnBack.clicked.connect(self.BackClicked)
+        self.btnProceed.clicked.connect(self.ProceedClicked)
 
     #Functions behind UI elements
-    def ExampleClicked(self):
-        print('Example button was clicked')
+    def HomeClicked(self):
+        self.lblOutput.setText('Output: Home was clicked')
 
+    def BackClicked(self):
+        self.lblOutput.setText('Output: Back was clicked')
 
+    def ProceedClicked(self):
+        self.lblOutput.setText('Output: Proceed was clicked')
 
 
 
